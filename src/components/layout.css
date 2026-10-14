@@ -1,0 +1,142 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 12px 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand h2 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.navbar-user-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-badge {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.btn-logout {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background-color: #c82333;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 230px;
+  background-color: #ffffff;
+  border-right: 1px solid #dee2e6;
+  min-height: calc(100vh - 100px);
+  padding: 20px 0;
+}
+
+.sidebar-title {
+  padding: 0 20px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6c757d;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-menu li a,
+.sidebar-menu li button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  border-left: 4px solid transparent;
+  transition: all 0.15s ease;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li button:hover {
+  background-color: #f1f5f9;
+  color: #0056b3;
+}
+
+.sidebar-menu li a.active {
+  background-color: #e8f0fe;
+  color: #0056b3;
+  font-weight: 700;
+  border-left-color: #0056b3;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 13px;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .main-body {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px 0;
+  }
+  .sidebar-menu {
+    display: flex;
+    overflow-x: auto;
+  }
+  .sidebar-menu li a {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px 14px;
+    white-space: nowrap;
+  }
+  .sidebar-menu li a.active {
+    border-bottom-color: #0056b3;
+  }
+}

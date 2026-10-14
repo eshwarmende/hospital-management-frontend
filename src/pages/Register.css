@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.08) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(20, 184, 166, 0.08) 0%, transparent 40%),
+              linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #f0fdfa 100%);
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08),
+              0 0 0 1px rgba(226, 232, 240, 0.8);
+  padding: 36px 32px;
+  box-sizing: border-box;
+}
+
+.auth-box h1 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.auth-box .subtitle {
+  font-size: 14px;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-box label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: -8px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.auth-box input:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 4px rgba(2, 132, 199, 0.12);
+}
+
+.auth-box button[type="submit"] {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #0284c7 0%, #0d9488 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+  box-shadow: 0 8px 18px -4px rgba(2, 132, 199, 0.4);
+}
+
+.auth-box button[type="submit"]:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.auth-link {
+  text-align: center;
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+.auth-link a {
+  color: #0284c7;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}

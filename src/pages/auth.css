@@ -1,0 +1,142 @@
+/* Auth Pages Styling (Login & Register) - College Project Style */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eef2f6;
+  padding: 20px;
+}
+
+.auth-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px 32px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #0056b3;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.auth-header h2 {
+  font-size: 22px;
+  color: #0056b3;
+  margin-bottom: 4px;
+}
+
+.auth-header p {
+  font-size: 14px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.password-input-wrapper .form-control {
+  padding-right: 60px;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #0056b3;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  user-select: none;
+  transition: background-color 0.15s ease;
+}
+
+.password-toggle-btn:hover {
+  background-color: #e9ecef;
+  color: #004085;
+}
+
+.password-toggle-btn:focus {
+  outline: 2px solid #80bdff;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  background-color: #ffffff;
+  color: #495057;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 11px;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.auth-btn:hover {
+  background-color: #004085;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.auth-footer a {
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
